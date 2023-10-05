@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Mooli&display=swap');
+
+:root{
+    --cor-fundo: #272829;
+    --cor-principal: #D8D9DA;
+    --cor-secundaria: #61677A;
+    --cor-fonte: #ffffff;
+    --cor-linha-tabela: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: var(--cor-fundo);
+}
+
+
+/*------------------------------*/
+/* Lateral da Página*/
+/*------------------------------*/
+
+
+.Lateral{
+    font-family: 'Mooli', sans-serif;
+    width: 25%;
+    text-align: center;
+    color: var(--cor-fonte);
+}
+
+
+/*------------------------------*/
+/* Lateral da Página*/
+/*------------------------------*/
+
+
+.Principal{
+    background-color: var(--cor-principal);
+    margin: 50px 0px;
+    padding: 50px 0px 0px 50px;
+    width: 100%;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.Foto, .Contato, .Interesses, .Referrencias{
+    padding: 40px 0px;
+}
+
+.Contato h2, .Interesses h2, .Referrencias h2{
+    padding: 10px 0px;
+}
