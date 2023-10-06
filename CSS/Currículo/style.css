@@ -46,19 +46,25 @@ body{
     font-family: 'Inclusive Sans', sans-serif;
 }
 
-.Foto, .Contato, .Interesses, .Referrencias{
+.Foto, .Contato, .Interesses, .Referencias{
     padding: 10px 0px;
 }
 
-.Contato h2, .Interesses h2, .Referrencias h2{
+.Contato h2, .Interesses h2, .Referencias h2{
     padding: 10px 0px;
 }
 
-.Contato h2:hover, .Interesses h2:hover, .Referrencias h2:hover {
+.Contato h2:hover, .Interesses h2:hover, .Referencias h2:hover {
 
     background-color: var(--cor-secundaria);
 }
 
-.Contato p, .Referrencias p{
+.Contato p, .Referencias p, .Educação p, .Profissional p, .Projetos p{
+    margin: 10px 25px;
+   text-align: justify;
+   }
 
+.Certificações li{
+    margin: 10px 25px;
+    text-align: justify;
 }
