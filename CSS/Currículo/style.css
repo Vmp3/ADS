@@ -47,9 +47,16 @@ body{
 }
 
 .Foto, .Contato, .Interesses, .Referrencias{
-    padding: 40px 0px;
+    padding: 10px 0px;
 }
 
 .Contato h2, .Interesses h2, .Referrencias h2{
     padding: 10px 0px;
 }
+
+.Contato h2:hover, .Interesses h2:hover, .Referrencias h2:hover {
+
+    background-color: var(--cor-secundaria);
+}
+
+.Contato p, .Referrencias p, .
