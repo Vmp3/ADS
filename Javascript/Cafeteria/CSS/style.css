@@ -50,5 +50,15 @@ body{
 }
 
 .lateral h1{
-    
+    color: var(--cor-fonte-branco);
+    font-size: 2rem;
+}
+
+.lateral h4{
+    color: var(--cor-fonte-branco);
+}
+
+hr{
+    margin:15px;
+    border-top: 3px solid var(--cor-lateral-linha);
 }
