@@ -321,3 +321,7 @@ textarea{
     font-size: 1.5rem;
     width: 20%;
 }
+
+.botao:hover{
+    background-color: var(--cor-hover);
+}
