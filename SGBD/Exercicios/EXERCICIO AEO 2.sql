@@ -118,7 +118,6 @@ CREATE TABLE FOLHA_PAGAMENTO (
 	, FOREIGN KEY (IDFUNCIONARIO) REFERENCES FUNCIONARIO (IDFUNCIONARIO)
 );
 
--- CIANDO PROCEDURE
 
 DELIMITER $$
 
@@ -130,8 +129,6 @@ BEGIN
     
 
     SET primeiroDiaUtil = DATE_ADD(DATE_FORMAT(CONCAT(ano_param, '-', mes_param, '-01'), '%Y-%m-%d'), INTERVAL 1 MONTH);
-    
-
     SET quintoDiaUtil = primeiroDiaUtil;
     SET @contador_diasUteis = 0;
     
@@ -156,7 +153,6 @@ BEGIN
 
     CALL CalcularQuintoDiaUtil(ano_param, mes_param, quintoDiaUtil);
 
-
     DELETE FROM FOLHA_PAGAMENTO
     WHERE YEAR(DT_PAGAMENTO) = ano_param AND MONTH(DT_PAGAMENTO) = mes_param;
 
@@ -178,27 +174,24 @@ END $$
 DELIMITER ;
 
 -- 1
-
      
 SET @resultado_QuintoDiaUtil = null;
 
-
 CALL CalcularQuintoDiaUtil(2023, 11, @resultado_QuintoDiaUtil);
-
 
 SELECT @resultado_QuintoDiaUtil AS QuintoDiaUtil;
 
--- 2
 
+
+-- 2
 
 SET @ano_referencia = 2023;
 SET @mes_referencia = 10;
 
-
 CALL GerarRegistrosPagamento(@ano_referencia, @mes_referencia);
-
-
 SELECT * FROM FOLHA_PAGAMENTO WHERE ANO_REFERENCIA = @ano_referencia AND MES_REFERENCIA = @mes_referencia;
+
+
 
 -- 3
 
