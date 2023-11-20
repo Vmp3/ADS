@@ -1,19 +1,17 @@
 package simulado3;
 
-import java.time.LocalDate;
-
-public class Autor {
+public class Biblioteca {
     private String nome;
-    private LocalDate dataNascimento;
     private Endereco endereco;
+    private Obra [] obra;
 
-    public Autor(String nome, LocalDate dataNascimento, Endereco endereco) {
+    public Biblioteca(String nome, Endereco endereco, Obra[] obra) {
         this.nome = nome;
-        this.dataNascimento = dataNascimento;
         this.endereco = endereco;
+        this.obra = obra;
     }
 
-    public Autor() {
+    public Biblioteca() {
         super();
     }
 
@@ -25,19 +23,19 @@ public class Autor {
         this.nome = nome;
     }
 
-    public LocalDate getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(LocalDate dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
     public Endereco getEndereco() {
         return endereco;
     }
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    public Obra[] getObra() {
+        return obra;
+    }
+
+    public void setObra(Obra[] obra) {
+        this.obra = obra;
     }
 }
