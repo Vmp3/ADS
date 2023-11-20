@@ -1,9 +1,10 @@
 package simulado3;
-
 import java.time.LocalDate;
-
-public class executavel{
+import java.util.Scanner;
+public class executavel {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
         Endereco enderecoDrummond = new Endereco("Rua das maças", 100, "Ingleses", "Florianópolis", "Santa Catarina");
         Autor drummond = new Autor("Carlos Drummond", LocalDate.of(1946, 10, 1), enderecoDrummond);
 
@@ -33,6 +34,34 @@ public class executavel{
         Endereco bibliotecaCentral = new Endereco("Rua das mangas", 600, "Centro", "Florianópolis", "Santa Catarina");
         Biblioteca biblioteca = new Biblioteca("Biblioteca Central", bibliotecaCentral, listaObras);
 
-        
+        // 1
+        biblioteca.contabilizarObras();
+        System.out.println();
+
+        // 2
+        biblioteca.obraMaisAntiga();
+        System.out.println();
+
+        // 3
+        biblioteca.autorMaisNovo();
+        System.out.println();
+
+        // 4
+        biblioteca.calcularDiferencaNascimento();
+        System.out.println();
+
+        // 5
+        String nome;
+
+        System.out.println("Informe um autor para obter suas informações: ");
+        nome = scan.nextLine();
+        biblioteca.localizarAutor(nome);
+        System.out.println();
+
+        // 6
+        String cidade;
+        System.out.println("Informe o nome de uma cidade: ");
+        cidade = scan.nextLine();
+        biblioteca.localizarAutorCidade(cidade);
     }
 }

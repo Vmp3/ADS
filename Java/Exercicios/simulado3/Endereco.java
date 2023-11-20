@@ -8,8 +8,8 @@ public class Endereco {
     private String cidade;
     private String estado;
 
-
     public Endereco(String rua, int numero, String bairro, String cidade, String estado) {
+        super();
         this.rua = rua;
         this.numero = numero;
         this.bairro = bairro;
@@ -63,14 +63,11 @@ public class Endereco {
 
     @Override
     public String toString() {
-        return "Endereco{" +
-                "rua='" + rua + '\'' +
-                ", numero=" + numero +
-                ", bairro='" + bairro + '\'' +
-                ", cidade='" + cidade + '\'' +
-                ", estado='" + estado + '\'' +
-                '}';
+        return
+                rua +
+                        ", " + numero +
+                        ", " + bairro +
+                        ", " + cidade +
+                        ", " + estado + ".";
     }
 }
-
-

@@ -5,12 +5,13 @@ import java.time.LocalDate;
 public class Autor {
     private String nome;
     private LocalDate dataNascimento;
-    private Endereco endereco;
+    private Endereco enderecoAutor;
 
-    public Autor(String nome, LocalDate dataNascimento, Endereco endereco) {
+    public Autor(String nome, LocalDate dataNascimento, Endereco enderecoAutor) {
+        super();
         this.nome = nome;
         this.dataNascimento = dataNascimento;
-        this.endereco = endereco;
+        this.enderecoAutor = enderecoAutor;
     }
 
     public Autor() {
@@ -33,11 +34,20 @@ public class Autor {
         this.dataNascimento = dataNascimento;
     }
 
-    public Endereco getEndereco() {
-        return endereco;
+    public Endereco getEnderecoAutor() {
+        return enderecoAutor;
     }
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
+    public void setEnderecoAutor(Endereco enderecoAutor) {
+        this.enderecoAutor = enderecoAutor;
+    }
+
+    @Override
+    public String toString() {
+        return "Autor{" +
+                "nome='" + nome + '\'' +
+                ", dataNascimento=" + dataNascimento +
+                ", enderecoAutor=" + enderecoAutor +
+                '}';
     }
 }

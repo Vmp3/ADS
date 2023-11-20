@@ -8,7 +8,9 @@ public class Obra {
     private LocalDate dataPublicacao;
     private Autor autor;
 
+
     public Obra(String titulo, int edicao, LocalDate dataPublicacao, Autor autor) {
+        super();
         this.titulo = titulo;
         this.edicao = edicao;
         this.dataPublicacao = dataPublicacao;
@@ -51,4 +53,13 @@ public class Obra {
         this.autor = autor;
     }
 
+    @Override
+    public String toString() {
+        return "Obra{" +
+                "titulo='" + titulo + '\'' +
+                ", edicao=" + edicao +
+                ", dataPublicacao=" + dataPublicacao +
+                ", autor=" + autor +
+                '}';
+    }
 }
