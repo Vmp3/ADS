@@ -17,6 +17,8 @@ public class Equipamento {
         super();
     }
 
+
+
     public String getModelo() {
         return modelo;
     }

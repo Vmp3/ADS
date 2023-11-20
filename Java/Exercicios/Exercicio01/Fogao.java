@@ -1,6 +1,6 @@
 package Exercicio01;
 
-public class Fogao extends Equipamento{
+public class Fogao extends Equipamento {
 
     private int capacidadeBocas;
 
