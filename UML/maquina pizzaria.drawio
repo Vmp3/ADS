@@ -1,0 +1,110 @@
+<mxfile host="Electron" modified="2023-11-21T18:15:05.496Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="oUzf5pzaWkl-uZTAEard" version="22.1.2" type="device">
+  <diagram id="mhqWbukmq2FxmOKYo7Oc" name="Página-1">
+    <mxGraphModel dx="1182" dy="690" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iFra2kbXSznqMyYs3x5s-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="iFra2kbXSznqMyYs3x5s-39" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-39" value="" style="ellipse;fillColor=#000000;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="210" y="125" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-40" value="Pedido feito" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="125" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-41" value="[cancelar pedido]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="450" y="190" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="iFra2kbXSznqMyYs3x5s-43" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-43" value="Fazendo pedido" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" parent="1" vertex="1">
+          <mxGeometry x="280" y="110" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-44" value="+ do / fazer_disponib()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" parent="iFra2kbXSznqMyYs3x5s-43" vertex="1">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-45" value="Subtitle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" parent="iFra2kbXSznqMyYs3x5s-43" vertex="1">
+          <mxGeometry y="60" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="iFra2kbXSznqMyYs3x5s-48" target="iFra2kbXSznqMyYs3x5s-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="iFra2kbXSznqMyYs3x5s-48" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-48" value="" style="rhombus;" parent="1" vertex="1">
+          <mxGeometry x="540" y="125" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="iFra2kbXSznqMyYs3x5s-49" target="iFra2kbXSznqMyYs3x5s-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-49" value="Cancelando pedido" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" parent="1" vertex="1">
+          <mxGeometry x="475" y="250" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-51" value="+ do / cancelarpedido()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" parent="iFra2kbXSznqMyYs3x5s-49" vertex="1">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-52" value="Subtitle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" parent="iFra2kbXSznqMyYs3x5s-49" vertex="1">
+          <mxGeometry y="60" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-53" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="760" y="265" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-54" value="pedido cancelado" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="635" y="260" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="iFra2kbXSznqMyYs3x5s-55" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-55" value="Confirmando pedido" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" parent="1" vertex="1">
+          <mxGeometry x="650" y="110" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-56" value="+ do / confirmarpedido()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" parent="iFra2kbXSznqMyYs3x5s-55" vertex="1">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-57" value="Subtitle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" parent="iFra2kbXSznqMyYs3x5s-55" vertex="1">
+          <mxGeometry y="60" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-58" value="[confirmar pedido]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="530" y="110" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-62" value="pedido confirmado" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="800" y="110" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="iFra2kbXSznqMyYs3x5s-63" target="iFra2kbXSznqMyYs3x5s-53" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1010" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-63" value="Realizando pagamento" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" parent="1" vertex="1">
+          <mxGeometry x="920" y="110" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-64" value="+ do / realizarpagamento()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" parent="iFra2kbXSznqMyYs3x5s-63" vertex="1">
+          <mxGeometry y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-65" value="Subtitle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontColor=#000000;" parent="iFra2kbXSznqMyYs3x5s-63" vertex="1">
+          <mxGeometry y="60" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="iFra2kbXSznqMyYs3x5s-68" value="pagamento realizado" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="870" y="195" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="wZZGrcdsJZiuMcKHRYVR-1" value="Diagrama de máquina de estado - PIZZARIA" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="70" width="360" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
