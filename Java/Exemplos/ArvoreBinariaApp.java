@@ -10,7 +10,7 @@ class Tree {
   private No root; // raiz
 
   public Tree() { root=null; } // inicializa arvore
-
+// atribuindo valores
   public void inserir(long v) {
     No novo = new No(); // cria um novo Nó
     novo.item = v; // atribui o valor recebido ao item de dados do Nó
@@ -41,7 +41,7 @@ class Tree {
     } // fim do else não raiz
 
   }
-
+// buscando valores
   public No buscar(long chave) {
     if (root == null) return null; // se arvore vazia
     No atual = root;  // começa a procurar desde raiz
@@ -53,7 +53,7 @@ class Tree {
     return atual; // terminou o laço while e chegou aqui é pq encontrou item
   }
 
-
+//removendo valores
   public boolean remover(long v) {
     if (root == null) return false; // se arvore vazia
 
