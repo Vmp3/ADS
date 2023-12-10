@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap"); 
+
+:root {
+    --fonte-titulo: "Lato", sans-serif; 
+    --fonte-texto: "Kalam", cursive;  
+
+    --cor-principal: #112D4E; 
+    --cor-secundaria: #3F72AF;
+    --cor-tercearia: #DBE2EF; 
+    --cor-fonte: #F9F7F7; 
+    --cor-preto: #000000; 
+    --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria), 70%, var(--cor-principal)); 
+}  
+
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    background: var(--cor-fundo);
+    color: var(--cor-fonte);
+}
+
+/*--------------*/
+/*    Titulo    */
+/*--------------*/ 
+
+.titulo h1 {
+    text-align: center;
+    padding-top: 130px;
+    font-size: 3rem;
+    font-family: var(--fonte-titulo);
+}
+
+.titulo h4 {
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-weight: normal;
+    font-size: 18px;
+    padding-bottom: 5.5vh;
+}
+
+/*-------------*/
+/*  Cadastro   */
+/*-------------*/ 
+
+.cadastro {
+    height: 70vh;
+}
+
+.ambos {
+    display: flex;
+    justify-content: center;
+}
+
+.esquerda {
+    padding-right: 16px;
+}
+
+form div {
+    padding-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-left: 1px;
+    font-size: 1rem;
+    font-family: var(--fonte-texto);
+}
+
+.input {
+    border: 2px solid;
+    border-radius: 10px;
+    height: 38px;
+    width: 20rem;
+    font-size: 1.3rem;
+}
+
+.botao-cadastrar {
+    text-align: center;
+    padding: 1rem;
+}
+
+.botao {
+    width: 20rem;
+    border: 2px solid;    
+    border-radius: 10px;    
+    font-family: var(--fonte-texto);
+    font-size: 1rem; 
+    font-weight: bold;  
+    height: 38px;     
+}
+
+.botao:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-fonte);
+}
+
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+
+.desenvolvedor h4 {
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-weight: normal;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/front_end/CSS/despesa/editar_despesa.css">
+    <title>Senhor Finanças</title>
+</head>
+<body>
+    <Header class="lateral">
+        <a href="#home"><img class="logo" src="/front_end/IMG/logo.jpg" alt="Logo da Empresa"></a>
+        <h2>Gerenciador Fianceiro</h2>
+        <hr>
+        <section class="btns-lateral">
+            <ul>
+                <a href="/front_end/modules/receita/principal_receita.html"><li class="btn">Receitas</li></a>
+                <a href="/front_end/modules/despesa/principal_despesas.html"><li class="btn">Despesas</li></a>
+                <a href="/front_end/modules/relatorio.html"><li class="btn">Relatorios</li></a>
+            </ul>
+        </section>
+    </Header>
+    <main class="principal">
+        <section class="titulo">
+            <h1>Cadastro de Despesas</h1>
+        </section>
+        <section class="cadastro-despesa">
+            <form action="">
+                <div>
+                    <label for="descricao">Descrição:</label>
+                    <input class="input" type="text" name="descricao" id="descricao" required minlength="3">
+                </div>
+                <div>
+                    <label for="Valor">Valor:</label>
+                    <input class="input" type="number" name="valor" id="valor" required>
+                </div>
+                <div>
+                    <label for="data-vencimento">Data de Vencimento:</label>
+                    <input class="input" type="date" name="data-vencimento" id="data-vencimento" required>
+                </div>
+                <div>
+                    <label for="data-pagamento">Data de Pagamento:</label>
+                    <input class="input" type="date" name="data-pagamento" id="data-pagamento" required>
+                </div>
+                <div class="botao-atualizar">
+                    <button class="botao" type="submit">Atualizar</button>
+                </div>
+            </form>
+        </section>
+        <section class="desenvolvedor">
+            <h4>Desenvolvido por Liris Cabral</h4>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\liris.teixeira\Downloads\senhor-financas\back-end\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2978649972.index
+3195961387.index
+3758425689.index
+2690062087.index
+2187572000.index

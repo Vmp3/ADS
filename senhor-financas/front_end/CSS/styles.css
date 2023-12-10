@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap"); 
+
+:root {
+    --fonte-titulo: "Lato", sans-serif; 
+    --fonte-texto: "Kalam", cursive;  
+
+    --cor-principal: #112D4E; 
+    --cor-secundaria: #3F72AF;
+    --cor-tercearia: #DBE2EF; 
+    --cor-fonte: #F9F7F7; 
+    --cor-preto: #000000; 
+    --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria), 70%, var(--cor-principal)); 
+}  
+
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    text-decoration: none;
+} 
+
+body { 
+    height: 100%;
+    background: var(--cor-fundo); 
+    color: var(--cor-fonte); 
+} 
+
+
+/*--------------*/
+/*    Titulo    */
+/*--------------*/ 
+
+
+.titulo h1 {
+    text-align: center;    
+    padding-top: 130px;
+    font-size: 3rem;
+    font-family: var(--fonte-titulo);
+} 
+
+.titulo h4 {
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-weight: normal;
+    font-size: 18px;
+    padding-bottom: 5vh;
+}
+
+/*-------------*/
+/*    Login    */
+/*-------------*/ 
+
+.login {
+    height: 70vh;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 41%;
+}
+
+form label {
+    display: block;
+    margin-left: 1px;
+    font-size: 1rem;
+    font-family: var(--fonte-texto);
+}
+
+.input {
+    margin: 2px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 2px;
+    height: 38px;
+    font-size: 1rem;
+}
+
+.botao-entrar {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 0rem;
+}
+
+.botao {
+    border: 2px solid;    
+    padding-right: 51%;
+    padding-left: 51%;    
+    border-radius: 10px;    
+    font-family: var(--fonte-texto);
+    font-size: 1rem; 
+    font-weight: bold;  
+    height: 38px;     
+}
+
+.botao:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-fonte);
+}
+
+.btn-criar-conta {
+    text-align: center;
+    font-family: var(--fonte-texto);
+    color: var(--cor-fonte);
+}
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+.desenvolvedor h4 {
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-weight: normal;
+}
