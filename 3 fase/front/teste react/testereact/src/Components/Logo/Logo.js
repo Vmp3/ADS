@@ -1,8 +1,9 @@
+import logomarca from './logo.svg'
 const Logo = () => {
 
     return(
         <div>
-            Logo
+            <img src={logomarca} alt="logo-marca" />
         </div>
     );
 }
