@@ -3,11 +3,15 @@ import './Header.css';
 
 const Header = () => {
 
+    function formataData(data){
+        const dia = data.getDate().toString();
+        return dia;
+    }
     return(
         <div className='head-container'> 
             <Logo />
-            <div> {new Date().getMonth()}</div>
-            <div> Icones</div>
+            <div> Data: {formataData(new Date)} </div>
+            <div> Icones </div>
         </div>
     );
 }
