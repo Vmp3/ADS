@@ -5,7 +5,7 @@ const Logo = () => {
     return(
         <div>
             <img src={logomarca} alt="logo-marca" />
-            <span> Medical - group</span>
+            <span> Medical - group</span>   
         </div>
     );
 }

@@ -1,4 +1,5 @@
 import Logo from '../Logo/Logo';
+import HeaderIcone from '../HeaderIcone/HeaderIcone';
 import './Header.css';
 
 const Header = () => {
@@ -15,7 +16,7 @@ const Header = () => {
         <div className='head-container'> 
             <Logo />
             <div>{formataData(new Date)} </div>
-            <div> Icones </div>
+            <HeaderIcone/> 
         </div>
     );
 }
