@@ -6,7 +6,7 @@ const Header = () => {
     return(
         <div className='head-container'> 
             <Logo />
-            <div> Data</div>
+            <div> {new Date().getMonth()}</div>
             <div> Icones</div>
         </div>
     );

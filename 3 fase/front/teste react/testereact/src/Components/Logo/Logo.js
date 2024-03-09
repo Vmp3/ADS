@@ -1,4 +1,5 @@
-import logomarca from './logo.svg'
+import logomarca from './logo.svg';
+import './Logo.css';
 const Logo = () => {
 
     return(
