@@ -14,7 +14,7 @@ const Header = () => {
     return(
         <div className='head-container'> 
             <Logo />
-            <div> Data: {formataData(new Date)} </div>
+            <div>{formataData(new Date)} </div>
             <div> Icones </div>
         </div>
     );
