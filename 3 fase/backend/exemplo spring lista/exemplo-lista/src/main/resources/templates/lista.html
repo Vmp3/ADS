@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista de Pessoas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listagem de Pessoas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="pessoa : ${pessoas}">
+                <td th:text="${pessoa[0]}"></td>
+                <td th:text="${pessoa[1]}"></td>
+                <td th:text="${pessoa[2]}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+ 
