@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/dados":{"guestpath":"/home/vagrant/dados","hostpath":"C:/Users/vicente.pereira/test/dados","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/vicente.pereira/test","disabled":false,"__vagrantfile":true}}}
