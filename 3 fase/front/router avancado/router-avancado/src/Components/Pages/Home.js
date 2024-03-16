@@ -3,8 +3,7 @@ const Home = () => {
     return (
         <div>
             <h1>Home</h1>
-            <Link to ={"/"}>Home</Link>
-            <Link to ={"/produtos"}> Produtos</Link>
+            <h1>aula de react</h1>
         </div>
     )
 }
