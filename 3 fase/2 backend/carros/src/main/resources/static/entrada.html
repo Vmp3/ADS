@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Carro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Entrada de Carro</h2>
+    <form action="/entrada" method="post">
+        <label for="nome">Nome do Carro:</label>
+        <input type="text" id="nome" name="nome" required>
+ 
+        <label for="fabricante">Fabricante:</label>
+        <input type="text" id="fabricante" name="fabricante" required>
+ 
+        <label for="placa">Placa:</label>
+        <input type="text" id="placa" name="placa" required>
+       
+        <button type="submit" value="Enviar">
+    </form>
+</body>
+</html>
