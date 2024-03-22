@@ -3,15 +3,23 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './Components/Pages/Home';
 import Produtos from './Components/Pages/Produtos';
 import RootLayout from './Components/Pages/RootLayout';
+import Clientes from './Components/Pages/Clientes';
+import Erro404 from './Components/Pages/Erro404';
 import { Children } from 'react';
 import MainHeader from './Components/MainHeader';
+
 
 function App() {
   const myRouter = createBrowserRouter([
     {
-      path: '/', element: <RootLayout/>,  children: [ 
+      path: '/', element: <RootLayout/>,
+      errorElement: <Erro404/>,
+      children: [ 
       {path: '/', element: <Home/>},
-      {path: '/produtos', element: <Produtos/>}
+      {path: '/produtos', element: <Produtos/>},
+      {path: '/clientes', element: <Clientes/>},
+      
+      
     ]
   }
     
