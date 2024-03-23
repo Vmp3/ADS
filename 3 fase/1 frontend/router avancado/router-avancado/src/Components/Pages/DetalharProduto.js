@@ -7,6 +7,7 @@ const DetalharProduto = () => {
             <>
                 <h1>Detalhe do produto</h1>
                 <p>{params.produtoId}</p>
+                
             </>
         );
 }

@@ -16,12 +16,9 @@ const MainHeader = () => {
         <div>
             <header>
                 <nav>
-                    <ul>  
-                        <li><button onClick={navigateHome}>Home</button></li> 
-                        <li><button onClick={navigateClientes}>Clientes</button></li> 
-                        <li><button onClick={navigateProduto}>Produtos</button></li>
-                        
-                    </ul>
+                        <button onClick={navigateHome}>Home</button> 
+                        <button onClick={navigateProduto}>Produtos</button>
+                        <button onClick={navigateClientes}>Clientes</button> 
                 </nav>
             </header>
         </div>
