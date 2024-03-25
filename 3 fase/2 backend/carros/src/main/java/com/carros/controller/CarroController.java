@@ -2,7 +2,6 @@ package com.carros.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.carros.model.Carro;
 import com.carros.repository.CarroRepository;
@@ -20,8 +19,7 @@ public class CarroController {
             @RequestParam("fabricante") String fabricante,
             @RequestParam("placa") String placa) {
         Carro carro = new Carro(nome, fabricante, placa, null);
-        carroRepository.save(null);
-        return "";
-
+        carroRepository.save(carro);
+        return "sucesso_carro";
     };
 }
