@@ -1,0 +1,35 @@
+clear
+history
+apt update
+apt install -y net-tools
+apt install -y nmap
+apt install -y docker docker.io docker-compose
+sudo usermod -aG docker vagrant
+apt upgrade -y 
+
+
+
+
+
+
+arquivo vagrant desktop/github/ads/3 fase/cloud/test
+
+vagrant up 
+vagrant ssh
+
+ssh vagrant@ip
+
+vagrant rmi imagem
+vagrant rm container
+
+docker images imagens
+docker ps em memoria
+docker ps -a tudo
+
+docker pull imagem
+
+docker run -it ubuntu/apache2 bin/bash
+-it terminal
+-p porta externa:interna
+--name nome
+
