@@ -18,7 +18,7 @@ public class CarroRepositoryJDBC implements CarroRepository {
 
     @Override
     public void save(Carro carros) {
-        String sql = "INSERT INTO entrada (nome, fabricante, placa) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO entrada (nome, fabricante, placa  ) VALUES (?, ?, ?)";
         jdbcTemplate.update(sql, carros.getNome(), carros.getFabricante(), carros.getPlaca());
     }
 
@@ -27,8 +27,13 @@ public class CarroRepositoryJDBC implements CarroRepository {
 
         String sql = "SELECT * FROM entrada";
         return jdbcTemplate.query(sql, (rs, rowNum) -> {
-            Carro carro = new Carro(rs.getString("nome"), rs.getString("fabricante"),
-                    rs.getString("placa"), rs.getTimestamp("dataEntrada"));
+            Carro carro = new Carro
+                            (rs.getString("nome"), 
+                            rs.getString("fabricante"),
+                            rs.getString("placa"), 
+                            rs.getTimestamp("dataEntrada"),
+                            rs.getLong("id")
+                            );
             return carro;
         });
     }

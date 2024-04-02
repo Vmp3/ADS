@@ -3,17 +3,18 @@ package com.carros.model;
 import java.sql.Timestamp;
 
 public class Carro {
-    private long id_carro;
+    private Long id_carro;
     private String nome;
     private String fabricante;
     private String placa;
     private Timestamp dataEntrada;
 
-    public Carro(String nome, String fabricante, String placa, Timestamp dataEntrada) {
+    public Carro(String nome, String fabricante, String placa, Timestamp dataEntrada, Long id_carro) {
         this.nome = nome;
         this.fabricante = fabricante;
         this.placa = placa;
         this.dataEntrada = dataEntrada;
+        this.id_carro = id_carro;
     }
 
     public long getId_carro() {
