@@ -3,6 +3,8 @@ Vagrant.configure("2") do |config|
   config.vm.provider :virtualbox do |vb|
       vb.name = "vicente"
   end
+  config.vm.network "forwarded_port", guest: 8085, host: 80 # httpd
+  2
   config.vm.hostname = "vicente"
   config.vm.network "public_network"
   
