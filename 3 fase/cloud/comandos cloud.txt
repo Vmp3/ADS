@@ -28,8 +28,16 @@ docker ps -a tudo
 
 docker pull imagem
 
-docker run -it ubuntu/apache2 bin/bash
+docker run -it -p portainterna>externa imagem 
 -it terminal
 -p porta externa:interna
 --name nome
+
+portainer
+
+dentro da pasta portainer
+docker-compose config
+docker-compose up
+
+
 
