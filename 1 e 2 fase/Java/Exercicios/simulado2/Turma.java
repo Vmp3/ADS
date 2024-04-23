@@ -4,10 +4,10 @@ public class Turma {
 
     private int serie;
     private Aluno [] aluno;
-    private Professor professor;
+    private Professor [] professor;
 
 
-    public Turma(int serie, Aluno[] aluno, Professor professor) {
+    public Turma(int serie, Aluno[] aluno, Professor[] professor) {
         this.serie = serie;
         this.aluno = aluno;
         this.professor = professor;
@@ -33,11 +33,11 @@ public class Turma {
         this.aluno = aluno;
     }
 
-    public Professor getProfessor() {
+    public Professor[] getProfessor() {
         return professor;
     }
 
-    public void setProfessor(Professor professor) {
+    public void setProfessor(Professor[] professor) {
         this.professor = professor;
     }
 
