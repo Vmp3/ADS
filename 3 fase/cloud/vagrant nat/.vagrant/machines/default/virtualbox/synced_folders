@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/dados":{"guestpath":"/home/vagrant/dados","hostpath":"C:/Users/vicente.pereira/Desktop/Github/ADS/3 fase/cloud/vagrant nat/dados","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/vicente.pereira/Desktop/Github/ADS/3 fase/cloud/vagrant nat","disabled":false,"__vagrantfile":true}}}

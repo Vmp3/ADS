@@ -1,11 +1,11 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/lunar64"
   config.vm.provider :virtualbox do |vb|
-      vb.name = "vicente"
+      vb.name = "vicenteNAT"
   end
-  config.vm.network "forwarded_port", guest: 8085, host: 80 # httpd
-  2
-  config.vm.hostname = "vicente"
+  config.vm.network "forwarded_port", guest: 80, host: 8085 # httpd
+  config.vm.network "forwarded_port", guest: 9000, host: 9000
+  config.vm.hostname = "vicenteNAT"
   
   config.vm.synced_folder "./dados/", "/home/vagrant/dados" #, type: "virtualbox"
   
@@ -16,6 +16,10 @@ Vagrant.configure("2") do |config|
     apt install -y nmap
     apt install -y docker docker.io docker-compose
     sudo usermod -aG docker vagrant
+	cd /home/vagrant/dados/portainer
+	docker-compose up -d
+	cd /home/vagrant/dados/html
+	docker-compose up -d
     apt upgrade -y
     sudo reboot
   SHELL

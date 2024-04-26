@@ -38,6 +38,12 @@ portainer
 dentro da pasta portainer
 docker-compose config
 docker-compose up
+docker-compose up -d pra não abrir no mesmo powershell
 
-
+Parar todos os contêineres em execução
+		docker stop $(docker ps -a -q)
+		Remover todos os contêineres
+		docker rm $(docker ps -a -q)
+		Remover todas as imagens
+		docker image prune -a
 
