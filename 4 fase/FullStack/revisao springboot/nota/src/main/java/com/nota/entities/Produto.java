@@ -1,5 +1,6 @@
 package com.nota.entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,14 +13,20 @@ public class Produto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+
+    @Column(name = "nome")
     private String nome;
+
+    @Column(name = "valor")
     private Double valor;
 
     public Produto() {
     }
 
-    public Produto(String nome, Double valor) {
+    public Produto(Long id, String nome, Double valor) {
+        this.id = id;
         this.nome = nome;
         this.valor = valor;
     }
@@ -47,6 +54,4 @@ public class Produto {
     public void setValor(Double valor) {
         this.valor = valor;
     }
-
-    
 }

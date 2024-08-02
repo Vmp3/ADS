@@ -8,7 +8,8 @@ public class ProdutoDTO {
     public ProdutoDTO() {
     }
 
-    public ProdutoDTO(String nome, Double valor) {
+    public ProdutoDTO( Long id, String nome, Double valor) {
+        this.id = id;
         this.nome = nome;
         this.valor = valor;
     }

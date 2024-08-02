@@ -2,7 +2,7 @@ package com.nota.dto;
 
 
 public class ClienteDTO {
-    private long id;
+    private Long id;
     private String nome;
     private String email;
     private EnderecoDTO enderecoDTO;
