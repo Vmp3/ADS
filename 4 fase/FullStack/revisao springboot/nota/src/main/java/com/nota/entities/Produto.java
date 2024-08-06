@@ -1,11 +1,6 @@
 package com.nota.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "produto")
@@ -22,15 +17,20 @@ public class Produto {
     @Column(name = "valor")
     private Double valor;
 
+    @ManyToOne
+    @JoinColumn(name = "categoria_id")
+    private Categoria categoria;
+
     public Produto() {
     }
 
-    public Produto(Long id, String nome, Double valor) {
+    public Produto(Long id, String nome, Double valor, Categoria categoria) {
         this.id = id;
         this.nome = nome;
         this.valor = valor;
+        this.categoria = categoria;
     }
-    
+
     public Long getId() {
         return id;
     }
@@ -53,5 +53,13 @@ public class Produto {
 
     public void setValor(Double valor) {
         this.valor = valor;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 }

@@ -2,14 +2,17 @@ package com.nota.service;
 
 import java.util.List;
 import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.nota.entities.Produto;
+import com.nota.entities.Categoria;
 import com.nota.repository.ProdutoRepository;
 
 @Service
 public class ProdutoService {
-    
+
     @Autowired
     private ProdutoRepository produtoRepository;
 
@@ -25,20 +28,25 @@ public class ProdutoService {
         return produtoRepository.findById(id);
     }
 
+    public List<Produto> obterProdutosPorCategoria(Categoria categoria) {
+        return produtoRepository.findByCategoria(categoria);
+    }
+
     public Produto atualizarProduto(Long id, Produto produto){
         Optional<Produto> produtoExistente = produtoRepository.findById(id);
         if (produtoExistente.isPresent()){
             Produto p = produtoExistente.get();
             p.setNome(produto.getNome());
             p.setValor(produto.getValor());
+            p.setCategoria(produto.getCategoria());
             return produtoRepository.save(p);
         } else {
             return null;
         }
     }
-    
+
     public boolean deletarProduto(Long id){
-        Optional<Produto> produtoExistente = produtoRepository.findById(id); // Correção aqui
+        Optional<Produto> produtoExistente = produtoRepository.findById(id);
         if (produtoExistente.isPresent()){
             produtoRepository.deleteById(id);
             return true;
