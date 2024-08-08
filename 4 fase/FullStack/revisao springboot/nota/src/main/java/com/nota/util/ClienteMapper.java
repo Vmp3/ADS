@@ -14,12 +14,13 @@ public class ClienteMapper {
         enderecoDTO.setNumero(cliente.getEndereco().getNumero());
         enderecoDTO.setComplemento(cliente.getEndereco().getComplemento());
 
-        return new ClienteDTO(cliente.getId(), cliente.getNome(), cliente.getEmail(), enderecoDTO);
+        ClienteDTO clienteDTO = new ClienteDTO(cliente.getNome(), cliente.getEmail(), enderecoDTO);
+        clienteDTO.setId(cliente.getId());
+        return clienteDTO;
     }
 
     public static Cliente toEntity(ClienteDTO clienteDTO) {
         Cliente cliente = new Cliente();
-        cliente.setId(clienteDTO.getId());
         cliente.setNome(clienteDTO.getNome());
         cliente.setEmail(clienteDTO.getEmail());
 

@@ -5,6 +5,7 @@ import com.nota.entities.Produto;
 import com.nota.entities.Categoria;
 
 public class ProdutoMapper {
+
     public static ProdutoDTO toDTO(Produto produto) {
         return new ProdutoDTO(produto.getId(), produto.getNome(), produto.getValor(), produto.getCategoria().getNome());
     }
@@ -18,4 +19,3 @@ public class ProdutoMapper {
         return produto;
     }
 }
-    

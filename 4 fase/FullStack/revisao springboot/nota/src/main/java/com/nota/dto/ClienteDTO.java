@@ -1,6 +1,5 @@
 package com.nota.dto;
 
-
 public class ClienteDTO {
     private Long id;
     private String nome;
@@ -10,18 +9,17 @@ public class ClienteDTO {
     public ClienteDTO() {
     }
 
-    public ClienteDTO(long id, String nome, String email, EnderecoDTO enderecoDTO) {
-        this.id = id;
+    public ClienteDTO(String nome, String email, EnderecoDTO enderecoDTO) {
         this.nome = nome;
         this.email = email;
         this.enderecoDTO = enderecoDTO;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -48,5 +46,4 @@ public class ClienteDTO {
     public void setEnderecoDTO(EnderecoDTO enderecoDTO) {
         this.enderecoDTO = enderecoDTO;
     }
-    
 }
